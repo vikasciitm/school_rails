@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   end
 
   def students_corner
+    @students=Student.all
   end
 
   def login

@@ -3,3 +3,28 @@
 	<h1>Pages#students_corner</h1>
 	<p>Find me in app/views/pages/students_corner.html.erb</p>	
 </div>
+
+<div class="card card-body">
+	<table class="table m-4 p-4">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Course</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @students.each do |student|%>
+			<tr>
+				<td><%=student.id %></td>
+				<td><%="#{student.first_name} #{student.last_name}" %></td>
+				<td><%= student.email%></td>
+				<td><%= student.course%></td>
+				<td><%= student.year%></td>
+			</tr>
+			<%end%>
+		</tbody>
+	</table>
+</div>
