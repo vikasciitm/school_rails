@@ -19,5 +19,6 @@ class PagesController < ApplicationController
   end
 
   def sin_up
+    @users=User.all
   end
 end

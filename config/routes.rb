@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get  '/students', to: 'pages#students_corner'
   get  '/login', to: 'pages#login'
   get  '/sinup', to: 'pages#sin_up'
+
+  resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
